@@ -8,5 +8,6 @@ print("Content-Type: text/html\n\n")
 if __name__ == '__main__':
     form = cgi.FieldStorage()
     input_str =  json.loads(form.getvalue('data'))
+    
     print(json.dumps({'res': input_str}))
     
